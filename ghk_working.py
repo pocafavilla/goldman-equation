@@ -7,9 +7,6 @@ def ghk_equation (K = 310, KO = 4, KI = 140, NaO = 150, NaI = 15, ClO = 0, ClI =
     F = 9.6485*10*10*10*10
     up = PK*KO+PNa*NaO+PCl*ClI
     down = PK*KI+PNa*NaI+PCl*ClO
-    #print(up)
-    #print(down)
-    #print(up/down)
     res = RT/F * (np.log(up/down))
     return("{} Volt".format(res))
 
